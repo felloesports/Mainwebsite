@@ -818,6 +818,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+  // Select all video elements
+const videos = document.querySelectorAll("video");
+
+// Loop through each video element
+videos.forEach((video) => {
+  // Prevent full screen
+  video.removeAttribute("controls");
+  video.addEventListener("webkitfullscreenchange", () => {
+    video.pause();
+    video.exitFullscreen();
+  });
+  video.addEventListener("fullscreenchange", () => {
+    video.pause();
+    video.exitFullscreen();
+  });
+});
   </script>
 </body>
 </html>
