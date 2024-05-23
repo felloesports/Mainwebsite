@@ -1,3 +1,7 @@
+window.addEventListener("load", function() {
+  document.querySelector(".preloader").style.display = "none";
+});
+
 function redirectIfNeeded() {
   if (window.innerWidth < 800) {
       window.location.href = "index-mobile.html"; // Replace with your target URL
@@ -118,26 +122,5 @@ window.onload = function() {
           };
       });
   };
-  function playLoop() {
-    document.getElementById("entry").style.display = "none"; 
-    document.getElementById("loop").style.display = "block"; 
-    document.getElementById("loop").play();
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-      const toggleInput = document.getElementById('toggle');
-      const contentOne = document.querySelector('.content-one');
-      const contentTwo = document.querySelector('.content-two');
-      contentOne.style.display='block';
-  
-      toggleInput.addEventListener('change', function() {
-          if (toggleInput.checked) {
-              contentOne.style.display = 'none';
-              contentTwo.style.display = 'block';
-          } else {
-              contentOne.style.display = 'block';
-              contentTwo.style.display = 'none';
-          }
-      });
-  });
 
   
