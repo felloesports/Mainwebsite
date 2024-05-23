@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felo Esports</title>
+  <title>Phone Paradise</title>
 
   <style>
     /* Reset CSS */
@@ -45,7 +45,7 @@ nav a {
     transition: .3s;
 }
 
-nav a:hover,
+nav a:active,
 nav a.active {
     color: #0ef;
 }
@@ -67,7 +67,7 @@ section {
   background-image: url('Image/layer2.jpg');
   background-size: cover;
   background-attachment: fixed;
-  padding-right: 50px;
+  padding-right: 5px;
 }
 
 #services {
@@ -135,7 +135,7 @@ section {
 
 .mobile-First-text{
   position: absolute;
-  font-size: small;
+  font-size: 0.5rem;
   bottom: 0;
   right: 0;
   -webkit-box-align: center;
@@ -152,8 +152,8 @@ section {
   -webkit-box-shadow: 2px 2px 10px rgba(29, 219, 219, 0.5);
           box-shadow: 2px 2px 10px rgba(29, 219, 219, 0.5);
   
-  
-  
+  height: 15%;
+  width: 50%;
   color: aliceblue;        
 }
 
@@ -165,11 +165,9 @@ section {
     width: 120px;
     height: 60px;
     display: inline-block;
-   
+    margin-top: 20px;
+    margin-left: 20px;
     border-radius: 50%;
-    left: -80px;
-    top: -270px;
-
 }
 
 .toggle-input {
@@ -261,11 +259,10 @@ section {
 }
 .content {
 height:auto;
-width: 15%;
-
+width: 35%;
 display: flex;
 font-size: small;
-justify-content: space-around;
+
 
 
 }
@@ -319,19 +316,19 @@ justify-content: space-around;
    
   }
   
-  .mobile-cool-button-green:hover,.mobile-cool-button-green:active{
+  .mobile-cool-button-green:active,.mobile-cool-button-green:active{
     background-color: #ffffff78;
   }
   
-  .mobile-cool-button-red:hover,.mobile-cool-button-red:active {
+  .mobile-cool-button-red:active,.mobile-cool-button-red:active {
     background-color: #ffffff97;
   }        
 .content-about{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
   position: relative;
+  padding: 100px 0 0 0;
   
 }
 /* styles.css */
@@ -367,15 +364,21 @@ justify-content: space-around;
    
     text-align: center;
     top: 50px;
-    left: 20vw;
-    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
     }
 
     .mobile-First-text-news1{
    
     height: 30%;
-    width: 80%;
-   
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
@@ -384,11 +387,12 @@ justify-content: space-around;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.mobile-5);
             box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.mobile-5); 
     margin-top: 30%;
-    left: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    
     position: relative;
     color: rgb(255, 255, 255);
     font-size: small;
-   
     border: 3px solid beige;
     padding-top: 30px;
 
@@ -413,7 +417,7 @@ justify-content: space-around;
     border-radius: 3px;
     position: relative;
     padding: 10px 20px;
-    top: 10%;
+    top: 5%;
    
     color: aliceblue;
     font-size: xx-small;
@@ -468,8 +472,8 @@ justify-content: space-around;
     background-color: #3e3c3c; /* Background color for table headers */
   }
   
-  tr:hover,tr:active {
-    background-color: #f5f5f5; /* Hover color for table rows */
+  tr:active,tr:active {
+    background-color: #f5f5f5; /* active color for table rows */
   }
   .mobile-button-container {
     position: relative;
@@ -484,6 +488,9 @@ justify-content: space-around;
             align-items: center;
     margin-top: 200px;
     height: 40vh;  
+    width: auto;
+    
+    
   }
   
   .mobile-button {
@@ -499,7 +506,7 @@ justify-content: space-around;
     transition: width 0.mobile-5s, height 0.mobile-5s;
     
   }
-  .mobile-button:hover {
+  .mobile-button:active {
     width: 150px;
     height: 150px;
   }
@@ -517,13 +524,15 @@ justify-content: space-around;
     -o-transition: width 0.mobile-5s, height 0.mobile-5s;
     transition: width 0.mobile-5s, height 0.mobile-5s;
   }
-  .mobile-button:hover img {
+  .mobile-button:active img {
     width: 100px;
     height: 100px;
   }
   .mobile-blend{mix-blend-mode:multiply ;}
      
-  
+  .content-contact{
+    width: 100vw;
+  }
   </style>
 </head>
 <body>
@@ -691,11 +700,12 @@ justify-content: space-around;
   <h4>April 5, 2024</h4>
   
   <br>
-  <p>We've just released Patch Update 1.1.0,
-  featuring bug fixes,performance improvements,
-  and new content. Check out the patch notes 
-  for all the details. Get ready to dive back 
-  into the action with exciting new features!
+  <p>
+We've just released Patch Update 1.1.0,
+featuring bug fixes,performance improvements,
+and new content. Check out the patch notes 
+for all the details. Get ready to dive back 
+into the action with exciting new features!
   </p>   
   </div>
   
